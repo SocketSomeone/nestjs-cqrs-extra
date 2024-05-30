@@ -1,6 +1,6 @@
 {
 	"name": "nestjs-cqrs-extra",
-	"description": "🚀 NestJS CQRS Extra is a library that provides additional features for the NestJS CQRS module.",
+	"description": "🚀 Library that provides additional features for the NestJS CQRS module.",
 	"version": "1.0.0",
 	"scripts": {
 		"build": "rimraf dist && tsc -p tsconfig.build.json",
