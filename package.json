@@ -21,7 +21,13 @@
 	},
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"keywords": [],
+	"keywords": [
+		"nestjs",
+		"cqrs",
+		"nestjs-cqrs",
+		"nestjs-cqrs-extra",
+		"nats"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",
