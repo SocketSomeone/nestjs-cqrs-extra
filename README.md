@@ -79,6 +79,8 @@ export class UserCommandsController {
 }
 ```
 
+Also you can use `@QueryHandler` and `@EventHandler` decorators to handle queries and events.
+
 ### Send a command
 
 ```typescript
