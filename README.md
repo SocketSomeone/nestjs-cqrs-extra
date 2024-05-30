@@ -16,14 +16,14 @@
 ## About
 
 Nest CQRS Extra is a module that provides additional features for the [NestJS CQRS module](https://docs.nestjs.com/recipes/cqrs). It
-provides a way to create a command bus and query bus that can be used to send commands and queries to the appropriate handlers. It also
-provides a way to create a command and query handler that can be used to handle commands and queries.
+provides a way to send commands and queries through a message broker (e.g. NATS, Redis, MQTT) to the appropriate handlers in microservices.
+It also provides a way to create sagas that can be used to handle events.
 
 **Features**
+
 - **Typings** - Provides typings for commands, queries, and events. (Request & Response)
 - **Message Broker** - Provides a way to send commands and queries to the appropriate handlers in microservices.
 - **Saga** - Provides a way to create sagas that can be used to handle events.
-
 
 ## Installation
 
@@ -46,7 +46,8 @@ import { CqrsModule } from 'nestjs-cqrs-extra';
         })
     ]
 })
-export class AppModule {}
+export class AppModule {
+}
 ```
 
 You can change adapter to `redis` or `mqtt` by changing the `adapter` option.
@@ -72,10 +73,10 @@ import { Controller } from '@nestjs/common';
 
 @Controller()
 export class UserCommandsController {
-	@CommandHandler(CreateUserCommand)
-	public createUser(command: CreateUserCommand): string {
-		return `User ${command.name} created`;
-	}
+    @CommandHandler(CreateUserCommand)
+    public createUser(command: CreateUserCommand): string {
+        return `User ${command.name} created`;
+    }
 }
 ```
 
@@ -89,7 +90,8 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class UserService {
-    constructor(private readonly commandBus: CommandBus) {}
+    constructor(private readonly commandBus: CommandBus) {
+    }
 
     async createUser(name: string): Promise<number> {
         return this.commandBus.execute(new CreateUserCommand(name));
