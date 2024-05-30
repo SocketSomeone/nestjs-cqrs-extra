@@ -57,7 +57,7 @@ You can change adapter to `redis` or `mqtt` by changing the `adapter` option.
 ```typescript
 import { BaseCommand } from 'nestjs-cqrs-extra';
 
-export class CreateUserCommand extends BaseCommand<number> {
+export class CreateUserCommand extends BaseCommand<string> {
     constructor(public readonly name: string) {
         super();
     }
@@ -93,7 +93,7 @@ export class UserService {
     constructor(private readonly commandBus: CommandBus) {
     }
 
-    async createUser(name: string): Promise<number> {
+    async createUser(name: string): Promise<string> {
         return this.commandBus.execute(new CreateUserCommand(name));
     }
 }
