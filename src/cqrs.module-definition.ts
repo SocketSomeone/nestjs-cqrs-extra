@@ -14,13 +14,20 @@ export const {
 		{
 			adapter: NatsAdapter
 		},
-		(options, extras) => ({
-			global: true,
-			module: options.module,
-			imports: options.imports,
-			controllers: options.controllers,
-			providers: [...options.providers, { provide: CqrsAdapter, useClass: extras.adapter }],
-			exports: options.exports
-		})
+		(options, extras) => {
+			console.log('options', options);
+			console.log('extras', extras);
+			return {
+				global: true,
+				module: options.module,
+				imports: options.imports,
+				controllers: options.controllers,
+				providers: [
+					...options.providers,
+					{ provide: CqrsAdapter, useClass: extras.adapter ?? NatsAdapter }
+				],
+				exports: options.exports
+			};
+		}
 	)
 	.build();
