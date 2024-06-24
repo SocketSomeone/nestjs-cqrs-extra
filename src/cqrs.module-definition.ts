@@ -15,8 +15,6 @@ export const {
 			adapter: NatsAdapter
 		},
 		(options, extras) => {
-			console.log('options', options);
-			console.log('extras', extras);
 			return {
 				global: true,
 				module: options.module,
