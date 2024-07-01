@@ -4477,9 +4477,9 @@ mute-stream@1.0.0:
   integrity sha512-avsJQhyd+680gKXyG/sQc0nXaC6rBkPOfyHYcFb9+hdkqQkR9bdnkJ0AMZhke0oesPqIO+mFFJ+IdBc7mst4IA==
 
 nats@^2.26.0:
-  version "2.27.0"
-  resolved "https://registry.yarnpkg.com/nats/-/nats-2.27.0.tgz#690fa6637c9b64297e89e52ee72fc530c0a67352"
-  integrity sha512-ebbcZE89YVHri2SHubJKAjNIgACGxMwAfdknFGQsOyLoLHXb8b35Tq9frl9p815Xskm1tjhjZ9hm6pNwL9pA7A==
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/nats/-/nats-2.28.0.tgz#98548f7434f7eb01ea5cf76f1b5650f85531c257"
+  integrity sha512-zXWOTOZEizUQy8UO2lMYFAee0htGrZLmJ2sddfmsDI00nc+dsK5+gS7p7bt26O1omfdCLVU5xymlnAjaqYnOmw==
   dependencies:
     nkeys.js "1.1.0"
 
