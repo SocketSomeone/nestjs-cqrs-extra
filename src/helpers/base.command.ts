@@ -1,3 +1,5 @@
+const RETURN_TYPE = Symbol('return');
+
 export abstract class BaseCommand<R = any> {
-	private readonly return: R;
+	protected readonly [RETURN_TYPE]: R;
 }
