@@ -824,10 +824,10 @@
     path-to-regexp "3.3.0"
     tslib "2.7.0"
 
-"@nestjs/microservices@10.4.2":
-  version "10.4.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-10.4.2.tgz#3c11c0a6a181132d1d4dd052cff598608d60fbfc"
-  integrity sha512-cyWaBeI6UN1SivBluToCccEJWPzr02i5BKdZRJOKvEWY1IEkXvqJ9Hu1LdW+qjyJAqKfjcWVsQWvBKvxC+VnTQ==
+"@nestjs/microservices@10.4.3":
+  version "10.4.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-10.4.3.tgz#80dd0fc9bba2223972bdaa6de9b960d4cebbaf49"
+  integrity sha512-sy9qP2PSib6FFWjNCrkRwa2ZQ5o2/5scgfaXQoi8KHDIDeferYdI8A3G9Cri9Q0xATttI5e/8JAVYpGT2jQoiw==
   dependencies:
     iterare "1.2.1"
     tslib "2.7.0"
@@ -5259,11 +5259,6 @@ ts-node@10.9.2:
     make-error "^1.1.1"
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
-
-tslib@2.6.3:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.3.tgz#0438f810ad7a9edcde7a241c3d80db693c8cbfe0"
-  integrity sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==
 
 tslib@2.7.0, tslib@^2.0.1, tslib@^2.1.0, tslib@^2.6.2:
   version "2.7.0"
