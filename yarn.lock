@@ -831,10 +831,10 @@
     path-to-regexp "3.3.0"
     tslib "2.7.0"
 
-"@nestjs/microservices@10.4.5":
-  version "10.4.5"
-  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-10.4.5.tgz#a7e90f138a1f744b95e6cc1405f8da82c2e61f2a"
-  integrity sha512-H2mJAkvx8KJnMf7OShfJBrAdCj7lPP8z84unaIyXmbXB7KRIVD9aV+p81Hk9NnjElr4qsj+pmeUrAHK7+pG9CA==
+"@nestjs/microservices@10.4.6":
+  version "10.4.6"
+  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-10.4.6.tgz#0718b0f99266b325f08d199f65e475017030fe6a"
+  integrity sha512-8mIWmgXvaQeIaOOq6IHVqluGfRKTE9cLfx7HPgOAoGrpNcejZIPnR78u/tHQC8zHmoo4JYJxaDS05kqrCo6Qhw==
   dependencies:
     iterare "1.2.1"
     tslib "2.7.0"
