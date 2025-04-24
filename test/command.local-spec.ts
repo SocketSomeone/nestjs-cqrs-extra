@@ -1,5 +1,5 @@
 import { BaseCommand, CommandBus, CommandHandler } from '../src';
-import { createApplication } from './utils.spec';
+import { createApplication } from './utils.local-spec';
 import { Controller, OnApplicationBootstrap } from '@nestjs/common';
 import { delay, of } from 'rxjs';
 
@@ -10,7 +10,7 @@ export class TestCommand extends BaseCommand<string> {
 }
 
 @Controller()
-export class CommandSpec implements OnApplicationBootstrap {
+export class CommandLocalSpec implements OnApplicationBootstrap {
 	public constructor(private readonly commandBus: CommandBus) {}
 
 	@CommandHandler(TestCommand)
@@ -27,4 +27,4 @@ export class CommandSpec implements OnApplicationBootstrap {
 	}
 }
 
-createApplication(CommandSpec);
+createApplication(CommandLocalSpec);
