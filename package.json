@@ -10,7 +10,11 @@
 		"publish:dev": "npm publish --access public --tag dev",
 		"prepare": "husky",
 		"format": "prettier --write \"src/**/*.ts\"",
-		"lint": "eslint --ignore-pattern .gitignore src/**/*.ts"
+		"lint": "eslint --ignore-pattern .gitignore src/**/*.ts",
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"test:cov": "jest --coverage",
+		"test:ci": "jest --ci --passWithNoTests --coverage"
 	},
 	"lint-staged": {
 		"*.ts": "npm run format"
