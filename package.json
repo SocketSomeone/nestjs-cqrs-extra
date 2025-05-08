@@ -45,7 +45,7 @@
 		"Alexey Filippov <socket.someone@gmail.com>"
 	],
 	"devDependencies": {
-		"@commitlint/cli": "19.8.0",
+		"@commitlint/cli": "19.8.1",
 		"@commitlint/config-angular": "19.8.1",
 		"@eslint/eslintrc": "^3.2.0",
 		"@eslint/js": "^9.18.0",
