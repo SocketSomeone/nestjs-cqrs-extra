@@ -55,7 +55,7 @@
 		"@nestjs/microservices": "10.4.15",
 		"@nestjs/testing": "10.4.15",
 		"@release-it/conventional-changelog": "^10.0.0",
-		"@types/jest": "29.5.14",
+		"@types/jest": "30.0.0",
 		"@types/node": "24.0.3",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "10.1.5",
