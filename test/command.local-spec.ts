@@ -27,4 +27,4 @@ export class CommandLocalSpec implements OnApplicationBootstrap {
 	}
 }
 
-createApplication(CommandLocalSpec);
+void createApplication(CommandLocalSpec);
