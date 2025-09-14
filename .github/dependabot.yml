@@ -1,22 +1,22 @@
 version: "2"
 updates:
-  - package-ecosystem: "github-actions"
-    rebase-strategy: "auto"
-    directory: "/"
+  - package-ecosystem: github-actions
+    rebase-strategy: auto
+    directory: /
     schedule:
-      interval: "daily"
+      interval: daily
     groups:
       actions-deps:
         patterns:
-          - "*"
-  - package-ecosystem: "npm"
-    rebase-strategy: "auto"
-    directory: "/"
+          - '*'
+  - package-ecosystem: npm
+    rebase-strategy: auto
+    directory: /
     schedule:
-      interval: "daily"
+      interval: daily
     open-pull-requests-limit: "10"
     groups:
       dev-deps:
-        dependency-type: "development"
+        dependency-type: development
       prod-deps:
-        dependency-type: "production"
+        dependency-type: production
