@@ -8,7 +8,7 @@ updates:
     groups:
       actions-deps:
         patterns:
-          - '*'
+          - "*"
   - package-ecosystem: npm
     rebase-strategy: auto
     directory: /
