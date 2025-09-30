@@ -45,7 +45,7 @@
 		"Alexey Filippov <socket.someone@gmail.com>"
 	],
 	"devDependencies": {
-		"@commitlint/cli": "20.0.0",
+		"@commitlint/cli": "20.1.0",
 		"@commitlint/config-angular": "20.0.0",
 		"@eslint/eslintrc": "^3.2.0",
 		"@eslint/js": "^9.18.0",
@@ -73,7 +73,7 @@
 		"rxjs": "7.8.2",
 		"ts-jest": "29.4.4",
 		"ts-node": "10.9.2",
-		"typescript": "5.9.2",
+		"typescript": "5.9.3",
 		"typescript-eslint": "^8.21.0"
 	},
 	"peerDependencies": {
