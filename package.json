@@ -45,8 +45,8 @@
 		"Alexey Filippov <socket.someone@gmail.com>"
 	],
 	"devDependencies": {
-		"@commitlint/cli": "20.2.0",
-		"@commitlint/config-angular": "20.2.0",
+		"@commitlint/cli": "20.3.0",
+		"@commitlint/config-angular": "20.3.0",
 		"@eslint/eslintrc": "^3.2.0",
 		"@eslint/js": "^9.18.0",
 		"@favware/npm-deprecate": "2.0.0",
@@ -61,7 +61,7 @@
 		"eslint-config-prettier": "10.1.8",
 		"eslint-plugin-import": "^2.31.0",
 		"eslint-plugin-prettier": "5.5.4",
-		"globals": "^16.0.0",
+		"globals": "^17.0.0",
 		"husky": "9.1.7",
 		"jest": "30.2.0",
 		"lint-staged": "16.2.7",
