@@ -45,8 +45,8 @@
 		"Alexey Filippov <socket.someone@gmail.com>"
 	],
 	"devDependencies": {
-		"@commitlint/cli": "20.4.0",
-		"@commitlint/config-angular": "20.4.0",
+		"@commitlint/cli": "20.4.1",
+		"@commitlint/config-angular": "20.4.1",
 		"@eslint/eslintrc": "^3.2.0",
 		"@eslint/js": "^9.18.0",
 		"@favware/npm-deprecate": "2.0.0",
@@ -56,7 +56,7 @@
 		"@nestjs/testing": "11.1.12",
 		"@release-it/conventional-changelog": "^10.0.0",
 		"@types/jest": "30.0.0",
-		"@types/node": "25.1.0",
+		"@types/node": "25.2.0",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "10.1.8",
 		"eslint-plugin-import": "^2.31.0",
