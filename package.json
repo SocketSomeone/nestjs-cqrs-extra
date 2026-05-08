@@ -45,8 +45,8 @@
 		"Alexey Filippov <socket.someone@gmail.com>"
 	],
 	"devDependencies": {
-		"@commitlint/cli": "20.5.3",
-		"@commitlint/config-angular": "20.5.3",
+		"@commitlint/cli": "21.0.0",
+		"@commitlint/config-angular": "21.0.0",
 		"@eslint/eslintrc": "^3.2.0",
 		"@eslint/js": "^10.0.1",
 		"@nestjs/common": "11.1.19",
@@ -62,8 +62,8 @@
 		"eslint-plugin-prettier": "5.5.5",
 		"globals": "^17.0.0",
 		"husky": "9.1.7",
-		"jest": "30.4.0",
-		"lint-staged": "17.0.2",
+		"jest": "30.4.1",
+		"lint-staged": "17.0.3",
 		"nats": "^2.26.0",
 		"prettier": "3.8.3",
 		"reflect-metadata": "0.2.2",
