@@ -1,7 +1,8 @@
 import { applyDecorators, Type } from '@nestjs/common';
 import { MessagePattern } from '@nestjs/microservices';
-import type { BaseCommand } from '../helpers';
+
 import type { ExtractGenericTypeFromCommand, TypedHandlerDecorator } from '../interfaces';
+import type { BaseCommand } from '../helpers';
 
 /**
  * Decorator that marks a class as a Nest command handler. A command handler

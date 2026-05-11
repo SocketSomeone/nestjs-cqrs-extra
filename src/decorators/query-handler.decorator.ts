@@ -1,7 +1,9 @@
 import type { Type } from '@nestjs/common';
+
 import { MessagePattern } from '@nestjs/microservices';
-import type { BaseQuery } from '../helpers';
+
 import type { ExtractGenericTypeFromQuery, TypedHandlerDecorator } from '../interfaces';
+import type { BaseQuery } from '../helpers';
 
 /**
  * Decorator that marks a class as a Nest query handler. A query handler

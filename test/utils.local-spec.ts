@@ -1,7 +1,8 @@
-import { Module, Type } from '@nestjs/common';
-import { CqrsAdapter, CqrsModule, NatsAdapter } from '../src';
-import { NestFactory } from '@nestjs/core';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
+import { Module, Type } from '@nestjs/common';
+import { NestFactory } from '@nestjs/core';
+
+import { CqrsAdapter, CqrsModule, NatsAdapter } from '../src';
 
 export const createApplication = async (command: Type<any>) => {
 	@Module({

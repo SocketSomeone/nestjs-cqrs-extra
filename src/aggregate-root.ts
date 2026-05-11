@@ -1,4 +1,5 @@
 import { RuntimeException } from '@nestjs/core/errors/exceptions/runtime.exception';
+
 import type { BaseEvent } from './helpers';
 
 const INTERNAL_EVENTS = Symbol();

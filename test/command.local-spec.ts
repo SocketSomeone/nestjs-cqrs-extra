@@ -1,7 +1,8 @@
-import { BaseCommand, CommandBus, CommandHandler } from '../src';
-import { createApplication } from './utils.local-spec';
 import { Controller, OnApplicationBootstrap } from '@nestjs/common';
 import { delay, of } from 'rxjs';
+
+import { BaseCommand, CommandBus, CommandHandler } from '../src';
+import { createApplication } from './utils.local-spec';
 
 export class TestCommand extends BaseCommand<string> {
 	public constructor(public readonly payload?: string) {

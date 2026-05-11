@@ -1,5 +1,7 @@
 import type { Type } from '@nestjs/common';
+
 import { EventPattern } from '@nestjs/microservices';
+
 import type { BaseEvent } from '../helpers';
 
 /**

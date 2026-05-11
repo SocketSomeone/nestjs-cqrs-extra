@@ -1,8 +1,11 @@
-import { Injectable } from '@nestjs/common';
 import type { Observable } from 'rxjs';
-import { CqrsAdapter } from './adapters';
-import type { BaseCommand } from './helpers';
+
+import { Injectable } from '@nestjs/common';
+
 import type { ExtractGenericTypeFromCommand } from './interfaces';
+import type { BaseCommand } from './helpers';
+
+import { CqrsAdapter } from './adapters';
 
 @Injectable()
 export class CommandBus {

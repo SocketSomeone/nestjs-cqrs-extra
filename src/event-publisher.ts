@@ -1,8 +1,11 @@
 import type { Type } from '@nestjs/common';
+
 import { Injectable } from '@nestjs/common';
+
 import type { AggregateRoot } from './aggregate-root';
-import { EventBus } from './event-bus';
 import type { BaseEvent } from './helpers';
+
+import { EventBus } from './event-bus';
 
 @Injectable()
 export class EventPublisher {

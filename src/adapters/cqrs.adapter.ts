@@ -1,5 +1,6 @@
-import type { BaseCommand, BaseQuery, BaseEvent } from '../helpers';
 import type { Observable } from 'rxjs';
+
+import type { BaseCommand, BaseQuery, BaseEvent } from '../helpers';
 
 export type CommandOrQuery = BaseCommand | BaseQuery;
 

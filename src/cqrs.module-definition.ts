@@ -1,4 +1,5 @@
 import { ConfigurableModuleBuilder } from '@nestjs/common';
+
 import { CqrsOptions } from './interfaces/cqrs-options.interface';
 import { CqrsAdapter, NatsAdapter } from './adapters';
 

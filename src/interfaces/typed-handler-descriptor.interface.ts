@@ -6,6 +6,6 @@ export type TypedHandlerDescriptor<T> = (
 	descriptor: TypedPropertyDescriptor<(...args: any[]) => T>
 ) => TypedPropertyDescriptor<(...args: any[]) => T> | void;
 
-export type TypedHandlerDecorator<T> = TypedHandlerDescriptor<T> &
+export type TypedHandlerDecorator<T> = TypedHandlerDescriptor<Observable<T>> &
 	TypedHandlerDescriptor<Promise<T>> &
-	TypedHandlerDescriptor<Observable<T>>;
+	TypedHandlerDescriptor<T>;
