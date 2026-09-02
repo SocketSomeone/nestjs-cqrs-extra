@@ -1,6 +1,6 @@
-import { RuntimeException } from '@nestjs/core/errors/exceptions/runtime.exception';
+import { RuntimeException } from '@nestjs/core/errors/exceptions/runtime.exception.js';
 
-import type { BaseEvent } from './helpers';
+import type { BaseEvent } from './helpers/index.js';
 
 const INTERNAL_EVENTS = Symbol();
 const IS_AUTO_COMMIT_ENABLED = Symbol();
@@ -17,13 +17,13 @@ export abstract class AggregateRoot<EventBase extends BaseEvent = BaseEvent> {
 		return this[IS_AUTO_COMMIT_ENABLED];
 	}
 
-	public publish<T extends EventBase = EventBase>(event: T): void {
+	public publish<T extends EventBase = EventBase>(_event: T): void {
 		throw new RuntimeException(
 			"Don't forget to call `mergeObjectContext()` or `mergeClassContext()`?"
 		);
 	}
 
-	public publishAll<T extends EventBase = EventBase>(events: T[]): void {
+	public publishAll<T extends EventBase = EventBase>(_events: T[]): void {
 		throw new RuntimeException(
 			"Don't forget to call `mergeObjectContext()` or `mergeClassContext()`?"
 		);
@@ -51,6 +51,8 @@ export abstract class AggregateRoot<EventBase extends BaseEvent = BaseEvent> {
 			this[INTERNAL_EVENTS].push(event);
 		}
 
-		this.autoCommit && this.publish(event);
+		if (this.autoCommit) {
+			this.publish(event);
+		}
 	}
 }

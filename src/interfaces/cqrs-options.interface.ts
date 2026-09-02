@@ -1,7 +1,7 @@
-import { NatsOptions } from '@nestjs/microservices/interfaces/microservice-configuration.interface';
-import { Type } from '@nestjs/common';
+import type { NatsOptions } from '@nestjs/microservices';
+import type { Type } from '@nestjs/common';
 
-import { CqrsAdapter, NatsAdapter } from '../adapters';
+import type { CqrsAdapter, NatsAdapter } from '../adapters/index.js';
 
 interface CustomCqrsOptions<T extends CqrsAdapter = CqrsAdapter> {
 	adapter?: Type<T>;

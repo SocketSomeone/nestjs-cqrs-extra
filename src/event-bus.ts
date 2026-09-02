@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 
-import type { BaseEvent } from './helpers';
+import type { BaseEvent } from './helpers/index.js';
 
-import { CqrsAdapter } from './adapters';
+import { CqrsAdapter } from './adapters/index.js';
 
 @Injectable()
 export class EventBus {
