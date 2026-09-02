@@ -2,7 +2,7 @@ import type { Type } from '@nestjs/common';
 
 import { EventPattern } from '@nestjs/microservices';
 
-import type { BaseEvent } from '../helpers';
+import type { BaseEvent } from '../helpers/index.js';
 
 /**
  * Decorator that marks a class as a Nest event handler. An event handler
@@ -13,5 +13,5 @@ import type { BaseEvent } from '../helpers';
  * @see https://docs.nestjs.com/recipes/cqrs#events
  */
 export function EventHandler<T extends BaseEvent>(event: Type<T>): MethodDecorator {
-	return EventPattern(event.name);
+	return EventPattern<string>(event.name);
 }

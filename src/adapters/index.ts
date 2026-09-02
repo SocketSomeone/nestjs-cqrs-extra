@@ -1,2 +1,2 @@
-export * from './cqrs.adapter';
-export * from './nats.adapter';
+export * from './cqrs.adapter.js';
+export * from './nats.adapter.js';

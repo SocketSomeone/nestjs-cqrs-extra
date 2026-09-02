@@ -1,7 +1,8 @@
 import { ConfigurableModuleBuilder } from '@nestjs/common';
 
-import { CqrsOptions } from './interfaces/cqrs-options.interface';
-import { CqrsAdapter, NatsAdapter } from './adapters';
+import type { CqrsOptions } from './interfaces/cqrs-options.interface.js';
+
+import { CqrsAdapter, NatsAdapter } from './adapters/index.js';
 
 export const {
 	ConfigurableModuleClass,
@@ -13,7 +14,7 @@ export const {
 	.setFactoryMethodName('createCqrsOptions')
 	.setExtras<CqrsOptions>(
 		{
-			adapter: NatsAdapter
+			adapter: undefined
 		},
 		(options, extras) => {
 			return {
@@ -22,7 +23,7 @@ export const {
 				imports: options.imports,
 				controllers: options.controllers,
 				providers: [
-					...options.providers,
+					...(options.providers ?? []),
 					{ provide: CqrsAdapter, useClass: extras.adapter ?? NatsAdapter }
 				],
 				exports: options.exports

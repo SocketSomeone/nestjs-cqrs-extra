@@ -3,12 +3,12 @@ import type { Observable } from 'rxjs';
 import { ClientProxy, ClientProxyFactory, Transport } from '@nestjs/microservices';
 import { Inject, Injectable, OnApplicationBootstrap } from '@nestjs/common';
 
-import type { CommandOrQuery } from './cqrs.adapter';
-import type { BaseEvent } from '../helpers';
+import type { CqrsOptions } from '../interfaces/cqrs-options.interface.js';
+import type { CommandOrQuery } from './cqrs.adapter.js';
+import type { BaseEvent } from '../helpers/index.js';
 
-import { CqrsOptions } from '../interfaces/cqrs-options.interface';
-import { CQRS_MODULE_OPTIONS } from '../cqrs.module-definition';
-import { CqrsAdapter } from './cqrs.adapter';
+import { CQRS_MODULE_OPTIONS } from '../cqrs.module-definition.js';
+import { CqrsAdapter } from './cqrs.adapter.js';
 
 @Injectable()
 export class NatsAdapter extends CqrsAdapter implements OnApplicationBootstrap {

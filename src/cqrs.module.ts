@@ -1,10 +1,10 @@
 import { Global, Module } from '@nestjs/common';
 
-import { ConfigurableModuleClass } from './cqrs.module-definition';
-import { EventPublisher } from './event-publisher';
-import { CommandBus } from './command-bus';
-import { EventBus } from './event-bus';
-import { QueryBus } from './query-bus';
+import { ConfigurableModuleClass } from './cqrs.module-definition.js';
+import { EventPublisher } from './event-publisher.js';
+import { CommandBus } from './command-bus.js';
+import { EventBus } from './event-bus.js';
+import { QueryBus } from './query-bus.js';
 
 const PROVIDERS = [CommandBus, EventBus, EventPublisher, QueryBus];
 

@@ -2,10 +2,10 @@ import type { Observable } from 'rxjs';
 
 import { Injectable } from '@nestjs/common';
 
-import type { ExtractGenericTypeFromQuery } from './interfaces';
-import type { BaseQuery } from './helpers';
+import type { ExtractGenericTypeFromQuery } from './interfaces/index.js';
+import type { BaseQuery } from './helpers/index.js';
 
-import { CqrsAdapter } from './adapters';
+import { CqrsAdapter } from './adapters/index.js';
 
 @Injectable()
 export class QueryBus {
